@@ -1,1 +1,0 @@
-Nota : 4/6 ; pr1 se putea face mai usor cu  Kruskal, eu am facut cu muchii critice
