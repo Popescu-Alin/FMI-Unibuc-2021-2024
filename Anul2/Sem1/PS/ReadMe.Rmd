@@ -1,0 +1,41 @@
+---
+title: "Raport"
+author: "Popescu Vasile-Alin, Udriste Mihai-Viorel, Nicolae Constantin-Eduard"
+output: html_document
+date: "09/02/2022"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Cerinta
+Tema proiectului este o aplicație care să ilustreze câteva dintre paradoxurile din teoria probabilităților și baza teoretică pe care o evidențiază acestea. 
+
+## In proiect vom trata urmatoarele paradoxuri:
+    - Paradoxul Monty Hall 
+    - Paradoxul lui Simpson
+
+## Prezentarea paradoxurilor
+
+### Paradoxul Monty Hall
+Este o enigmă matematică bazată pe un joc fictiv numit 'Doors'. În acest joc există trei uși, una dintre ele ascunzând un premiu. Jucătorul alege o ușă, dar înainte ca premiul să fie dezvăluit, un moderator deschide o ușă care nu a fost aleasă și nu ascunde premiul. Jucătorului i se oferă apoi opțiunea de a-și păstra alegerea sau de a-și schimba alegerea la altă ușă. Paradoxul se referă la faptul că, matematic, jucătorul are o șansă mai mare de a câștiga premiul dacă își schimbă alegerea, deși aceasta pare neindicată din perspectiva intuiției. Probabilitatea de a câștiga premiul este de 1/3 pentru prima alegere a jucătorului, dar devine de 2/3 dacă acesta își schimbă alegerea după ce moderatorul a deschis o ușă fără premiu.
+	
+Problema este un paradox de tip veridic, deoarece soluția este atât de contraintuitivă încât poate părea absurdă, dar este totuși adevărată în mod demonstrabil. Problema Monty Hall este strâns legată din punct de vedere matematic de problema anterioară a celor trei prizonieri și de paradoxul cutiei lui Bertrand, mult mai vechi. Când a fost publicată prima dată, aproximativ 10 000 de cititori, inclusiv aproximativ 1000 cu doctorat, au scris autorului că nu este corect acest acest rezultat. De aceea am realizat un număr mare de simulări care să ne determine dacă această rezolvare este corectă.
+
+### Paradoxul lui Simpson
+Este un fenomen statistic in care o tendinta aparenta in mai multe grupuri de date se inverteaza cand aceste grupuri sunt combinate. In alte cuvinte, un fenomen care pare sa aiba o anumita directie la nivelul grupurilor individuale poate sa aiba o directie total opusa atunci cand aceste grupuri sunt analizate impreuna.
+
+Este important de retinut ca Paradoxul Simpson nu este o eroare in analiza statistica, ci mai degraba rezultatul unei interpretari gresite a datelor. Este necesar sa se analizeze cu atentie datele si sa se tina cont de posibilii factori care ar putea afecta interpretarea corecta a datelor.
+
+Intelegerea acestui paradox ne poate creste capacitatea de evitare a informatiilor false care au la baza date scoase din contextul statistic.
+
+## Prezentare scurta a exemplului
+Dupa cum se poate vedea in aceasta aplicatie, chiar daca procentul pacientilor vindecati de noul tratament este mai mare decat procentul pacientilor vindecati de vechiul tratament, cand sunt analizate datele se poate vedea ca procentul de barbati si femei vindecati este mult mai mic la noul tratament.
+
+## Prezentarea implementarii proiectului
+
+Pentru implementarea acestui paradox am folosit librariile:
+  - `library("shiny")`
+  - `library("ggplot2")`
+
+Aplicatia prezinta un selector pentru a putea alege care dintre paradoxuri sa fie afisate. Fiecare paradox are un submeniu specific pentru a interactiona cu acesta, dupa care este prezentat un grafic cu datele particulare.
